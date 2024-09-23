@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "description": "Cloudflare Pages function to generate OG imaage.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "login": "wrangler login",
+    "setup": "wrangler pages project create og-image-generator --production-branch main",
+    "dev": "wrangler pages dev",
+    "build": "npm run clean && wrangler pages functions build --outdir=.dist",
+    "deploy": "npm run build && wrangler pages deploy",
+    "destroy": "wrangler pages project delete og-image-generator"
   },
   "author": "toshimaru",
   "dependencies": {
