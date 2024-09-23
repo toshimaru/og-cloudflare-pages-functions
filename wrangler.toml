@@ -1,0 +1,8 @@
+name = "og-image-generator"
+pages_build_output_dir = "./dist"
+compatibility_date = "2024-09-01"
+
+[dev]
+ip = "localhost"
+port = 8080
+local_protocol = "http"
