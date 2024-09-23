@@ -1,2 +1,3 @@
-# og-cloudflare-pages-functions
+# OG Cloudflare Pages Functions
+
 Cloudflare Pages function to generate OG imaage.
