@@ -5,6 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "toshimaru",
-  "license": "ISC"
+  "devDependencies": {
+    "typescript": "^5",
+    "wrangler": "^3.57.1"
+  },
+  "author": "toshimaru"
 }
