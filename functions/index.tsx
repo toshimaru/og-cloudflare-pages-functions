@@ -23,7 +23,7 @@ export const onRequest: PagesFunction = async (context) => {
           backgroundColor: "#F4F4FA",
           width: 1200,
           height: 630,
-          backgroundImage: 'url("https://cloudflare-pages-vercel-og-remix-sample.pages.dev/img/ogp-background.png")',
+          backgroundImage: 'url("https://raw.githubusercontent.com/toshimaru/og-cloudflare-pages-functions/refs/heads/main/images/ogp-background.png")',
         }}
       >
         {avatar && (
