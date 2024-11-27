@@ -6,7 +6,7 @@
     "login": "wrangler login",
     "setup": "wrangler pages project create og-image-generator --production-branch main",
     "dev": "wrangler pages dev",
-    "build": "npm run clean && wrangler pages functions build --outdir=.dist",
+    "build": "wrangler pages functions build --outdir=.dist",
     "deploy": "npm run build && wrangler pages deploy",
     "destroy": "wrangler pages project delete og-image-generator"
   },
