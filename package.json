@@ -20,6 +20,6 @@
   "devDependencies": {
     "@types/react": "^19.0.2",
     "typescript": "^5",
-    "wrangler": "^3.99.0"
+    "wrangler": "^3.103.2"
   }
 }
