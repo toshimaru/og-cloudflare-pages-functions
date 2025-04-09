@@ -14,11 +14,11 @@
   "dependencies": {
     "@cloudflare/pages-plugin-vercel-og": "^0.1.2",
     "@cloudflare/workers-types": "^4.20250407.0",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.11",
+    "@types/react": "^19.1.0",
     "typescript": "^5",
     "wrangler": "^3.99.0"
   }
