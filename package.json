@@ -15,7 +15,7 @@
     "@cloudflare/pages-plugin-vercel-og": "^0.1.2",
     "@cloudflare/workers-types": "^4.20250705.0",
     "react": "^19.1.1",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.9",
