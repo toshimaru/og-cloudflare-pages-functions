@@ -7,14 +7,14 @@
 - `images/` stores static design assets such as `ogp-background.png`.
 - `wrangler.toml` defines the Pages project, compatibility date, and local server settings.
 - `tsconfig.json` holds the TypeScript compiler configuration.
-- `mise.toml` pins Node.js 24 for mise users; `package.json` `engines` requires Node 24 or newer.
+- `package.json` `engines` requires Node 24 or newer.
 - `.github/workflows/ci.yml` runs the production build for pull requests.
 
 Keep request handling and image composition in `index.tsx`; move reusable network or transformation logic into focused modules under `functions/`.
 
 ## Build, Test, and Development Commands
 
-Use Node.js 24 or newer (`mise.toml` provides this automatically for mise users):
+Use Node.js 24 or newer:
 
 ```sh
 npm ci
