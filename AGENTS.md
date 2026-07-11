@@ -22,7 +22,7 @@ npm run dev
 npm run build
 ```
 
-`npm run dev` starts Wrangler Pages at `http://localhost:8080`. Test an image with `/?title=Hello` or add an encoded `avatar` URL. `npm run build` compiles the Pages Functions bundle into `.dist` and is the same validation CI performs. `npm run deploy` builds and deploys through Wrangler; run it only with the intended Cloudflare account selected.
+`npm run dev` starts Wrangler Pages at `http://localhost:8080`. Test an image with `/?title=Hello` or add an encoded `avatar` URL. `npm run build` compiles the Pages Functions bundle into `dist` and is the same validation CI performs. `npm run deploy` builds and deploys through Wrangler; run it only with the intended Cloudflare account selected.
 
 Dependency install scripts are gated by the `allowScripts` field in `package.json`, which approves specific packages at exact versions (currently `esbuild`, `sharp`, `workerd`, and `fsevents`). When bumping any of these packages, update the pinned version in `allowScripts` in the same change.
 
