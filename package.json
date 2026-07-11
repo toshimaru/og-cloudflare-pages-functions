@@ -11,6 +11,9 @@
     "destroy": "wrangler pages project delete og-image-generator"
   },
   "author": "toshimaru",
+  "engines": {
+    "node": ">=24"
+  },
   "dependencies": {
     "@cloudflare/pages-plugin-vercel-og": "^0.1.2",
     "@cloudflare/workers-types": "^4.20260317.1",
