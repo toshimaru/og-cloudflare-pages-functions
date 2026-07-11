@@ -6,13 +6,15 @@
 - `functions/utils.ts` contains shared runtime helpers, currently the Google Fonts fetcher.
 - `images/` stores static design assets such as `ogp-background.png`.
 - `wrangler.toml` defines the Pages project, compatibility date, and local server settings.
+- `tsconfig.json` holds the TypeScript compiler configuration.
+- `mise.toml` pins Node.js 24 for mise users; `package.json` `engines` requires Node 24 or newer.
 - `.github/workflows/ci.yml` runs the production build for pull requests.
 
 Keep request handling and image composition in `index.tsx`; move reusable network or transformation logic into focused modules under `functions/`.
 
 ## Build, Test, and Development Commands
 
-Use Node.js 24 or newer:
+Use Node.js 24 or newer (`mise.toml` provides this automatically for mise users):
 
 ```sh
 npm ci
@@ -21,6 +23,8 @@ npm run build
 ```
 
 `npm run dev` starts Wrangler Pages at `http://localhost:8080`. Test an image with `/?title=Hello` or add an encoded `avatar` URL. `npm run build` compiles the Pages Functions bundle into `.dist` and is the same validation CI performs. `npm run deploy` builds and deploys through Wrangler; run it only with the intended Cloudflare account selected.
+
+Dependency install scripts are gated by the `allowScripts` field in `package.json`, which approves specific packages at exact versions (currently `esbuild`, `sharp`, `workerd`, and `fsevents`). When bumping any of these packages, update the pinned version in `allowScripts` in the same change.
 
 ## Coding Style & Naming Conventions
 
