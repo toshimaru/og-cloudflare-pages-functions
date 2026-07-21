@@ -4,6 +4,14 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    groups:
+      cloudflare:
+        patterns:
+          - "@cloudflare/workers-types"
+          - "wrangler"
+        update-types:
+          - minor
+          - patch
     reviewers:
       - toshimaru
   - package-ecosystem: github-actions
